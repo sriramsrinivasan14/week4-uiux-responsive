@@ -1,0 +1,30 @@
+const image = (id, w = 900, h = 1100) =>
+  `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&h=${h}&q=85`
+
+export const categories = [
+  { id: 'men', name: 'Men', description: 'Everyday essentials with a sharp edge.', icon: '◈', image: image('photo-1515886657613-9f3515b0c78f') },
+  { id: 'women', name: 'Women', description: 'Fresh styles made for every moment.', icon: '✦', image: image('photo-1483985988355-763728e1935b') },
+  { id: 'kids', name: 'Kids', description: 'Playful picks for growing personalities.', icon: '☀', image: image('photo-1503919545889-aef636e10ad4') },
+  { id: 'accessories', name: 'Accessories', description: 'Small details that complete the look.', icon: '◇', image: image('photo-1523170335258-f5ed11844a49') },
+  { id: 'electronics', name: 'Electronics', description: 'Useful tech for a smarter everyday.', icon: '⌁', image: image('photo-1496181133206-80ce9b88a853') },
+  { id: 'footwear', name: 'Footwear', description: 'Comfort-first pairs built to move.', icon: '⌂', image: image('photo-1542291026-7eec264c27ff') }
+]
+
+export const products = [
+  { id: 1, name: 'Urban Linen Overshirt', category: 'Men', price: 1899, oldPrice: 2499, discount: 24, rating: 4.7, image: image('photo-1529139574466-a303027c1d8b'), description: 'A breathable linen-blend overshirt designed for relaxed city days and easy layering.', sizes: ['S','M','L','XL'], colors: ['Sand','Olive','Navy'] },
+  { id: 2, name: 'Everyday Denim Jacket', category: 'Men', price: 2299, oldPrice: 3199, discount: 28, rating: 4.5, image: image('photo-1490114538077-0a7f8cb49891'), description: 'A versatile denim layer with a clean silhouette and durable everyday finish.', sizes: ['S','M','L','XL'], colors: ['Blue','Black'] },
+  { id: 3, name: 'Soft Knit Co-ord Set', category: 'Women', price: 2799, oldPrice: 3699, discount: 24, rating: 4.8, image: image('photo-1496747611176-843222e1e57c'), description: 'A polished two-piece knit set balancing comfort, texture and effortless style.', sizes: ['XS','S','M','L'], colors: ['Cream','Sage','Charcoal'] },
+  { id: 4, name: 'Minimal Day Dress', category: 'Women', price: 1999, oldPrice: 2899, discount: 31, rating: 4.6, image: image('photo-1539008835657-9e8e9680c956'), description: 'An easy day dress with a flattering shape and lightweight feel.', sizes: ['XS','S','M','L'], colors: ['Black','Rust','Ivory'] },
+  { id: 5, name: 'Canvas Mini Backpack', category: 'Accessories', price: 1299, oldPrice: 1799, discount: 28, rating: 4.4, image: image('photo-1553062407-98eeb64c6a62'), description: 'Compact everyday storage with smart pockets and a comfortable carry.', sizes: ['One Size'], colors: ['Stone','Forest','Black'] },
+  { id: 6, name: 'Classic Steel Watch', category: 'Accessories', price: 3499, oldPrice: 4999, discount: 30, rating: 4.8, image: image('photo-1524805444758-089113d48a6d'), description: 'A clean steel timepiece with a timeless face for work and weekends.', sizes: ['One Size'], colors: ['Silver','Graphite'] },
+  { id: 7, name: 'Everyday Runner 2.0', category: 'Footwear', price: 2499, oldPrice: 3299, discount: 24, rating: 4.7, image: image('photo-1542291026-7eec264c27ff'), description: 'Lightweight running-inspired sneakers with responsive cushioning.', sizes: ['6','7','8','9','10','11'], colors: ['White','Black','Red'] },
+  { id: 8, name: 'Cloud Walk Sneakers', category: 'Footwear', price: 2899, oldPrice: 3899, discount: 26, rating: 4.6, image: image('photo-1549298916-b41d501d3772'), description: 'Soft, flexible sneakers built for long days on the move.', sizes: ['6','7','8','9','10'], colors: ['Cream','Grey'] },
+  { id: 9, name: 'Kids Play Hoodie', category: 'Kids', price: 999, oldPrice: 1399, discount: 29, rating: 4.5, image: image('photo-1519238263530-99bdd11df2ea'), description: 'A cozy hoodie made for school days, playtime and cool evenings.', sizes: ['4Y','6Y','8Y','10Y'], colors: ['Blue','Yellow','Green'] },
+  { id: 10, name: 'Kids Weekend Set', category: 'Kids', price: 1199, oldPrice: 1699, discount: 29, rating: 4.4, image: image('photo-1516627145497-ae6968895b74'), description: 'A cheerful, easy-care set designed for comfortable weekend adventures.', sizes: ['4Y','6Y','8Y','10Y'], colors: ['Coral','Mint','Navy'] },
+  { id: 11, name: 'Focus Wireless Headphones', category: 'Electronics', price: 3999, oldPrice: 5499, discount: 27, rating: 4.8, image: image('photo-1505740420928-5e560c06d30e'), description: 'Over-ear wireless headphones with rich sound and a comfortable fit.', sizes: ['One Size'], colors: ['Black','Cream'] },
+  { id: 12, name: 'Pocket Bluetooth Speaker', category: 'Electronics', price: 1799, oldPrice: 2499, discount: 28, rating: 4.5, image: image('photo-1608043152269-423dbba4e7e1'), description: 'A compact speaker for desk setups, picnics and relaxed evenings.', sizes: ['One Size'], colors: ['Black','Orange'] },
+  { id: 13, name: 'Smart Desk Lamp', category: 'Electronics', price: 1599, oldPrice: 2199, discount: 27, rating: 4.3, image: image('photo-1507473885765-e6ed057f782c'), description: 'A minimal desk lamp with adjustable light direction for focused work.', sizes: ['One Size'], colors: ['White','Black'] },
+  { id: 14, name: 'Structured Tote Bag', category: 'Accessories', price: 1699, oldPrice: 2299, discount: 26, rating: 4.6, image: image('photo-1548036328-c9fa89d128fa'), description: 'A roomy structured tote for work, campus and daily essentials.', sizes: ['One Size'], colors: ['Tan','Black'] },
+  { id: 15, name: 'Relaxed Cotton Tee', category: 'Men', price: 799, oldPrice: 1099, discount: 27, rating: 4.4, image: image('photo-1521572163474-6864f9cf17ab'), description: 'A soft cotton tee with a relaxed fit and easy everyday styling.', sizes: ['S','M','L','XL'], colors: ['White','Black','Green'] },
+  { id: 16, name: 'Pleated Midi Skirt', category: 'Women', price: 1499, oldPrice: 2099, discount: 29, rating: 4.5, image: image('photo-1583496661160-fb5886a0aaaa'), description: 'A fluid pleated skirt that works from casual afternoons to dinner plans.', sizes: ['XS','S','M','L'], colors: ['Black','Beige','Blue'] }
+]
